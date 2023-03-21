@@ -11,6 +11,13 @@ const router = createRouter({
       meta: {
         title: "Monsta Games | Home"
       }
+    },
+    {
+      path: '/broken-sleep',
+      name: 'Broken Sleep',
+      meta: {
+        title: "Monsta Games | Broken Sleep"
+      }
     }
   ]
 })
