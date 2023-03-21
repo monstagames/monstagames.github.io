@@ -7,9 +7,17 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: {
+        title: "Monsta Games | Home"
+      }
     }
   ]
+})
+
+router.afterEach((to, from) => {
+  const title = document.querySelector("title")
+  title.innerHTML = to.meta.title
 })
 
 export default router

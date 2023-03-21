@@ -13,5 +13,8 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-
+  main {
+    min-height: 100vh;
+    backdrop-filter: blur(0.3rem);
+  }
 </style>

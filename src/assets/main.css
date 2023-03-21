@@ -1,0 +1,7 @@
+html, body {
+    margin: 0;
+}
+
+#app {
+    background-image: url(/images/background.gif);
+}
