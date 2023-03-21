@@ -1,3 +1,1 @@
-# monstagames.github.io
-
-## Development repository
+# GitHub pages development repo
