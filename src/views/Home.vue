@@ -56,6 +56,7 @@ button {
   font-weight: bolder;
   transition: all 0.4s;
   cursor: pointer;
+  border: none;
 }
 
 button:hover {
