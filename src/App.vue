@@ -28,8 +28,9 @@ setInterval(() => {
   <img class="slideshow-element" :style="`${slideshow.second_style}; background-image: url(/images/slideshow/${slideshow.second}.webp);`">
   <!---->
   <header>
-    <img id="studio-logo" src="/images/placeholder.webp" alt="">
-    <h1>Logo up here ig</h1>
+    <router-link to="/">
+      <img id="studio-logo" src="/images/placeholder.webp" alt="Monsta Games logo">
+    </router-link>
   </header>
   <router-view v-slot="{ Component }">
     <transition name="slide" mode="out-in">
@@ -50,6 +51,7 @@ header {
   padding: 0 2vw;
   backdrop-filter: blur(1rem);
   justify-content: space-between;
+  border-bottom: rgba(255, 255, 255, 0.3) 0.2vh dashed;
 }
 
 #studio-logo {
@@ -64,7 +66,7 @@ header {
   left: -5vw;
   width: 110vw;
   height: 110vh;
-  transition: opacity 5 s;
+  transition: opacity 5s;
   filter: grayscale(0.9) brightness(1.2);
   z-index: -1;
 }

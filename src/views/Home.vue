@@ -2,13 +2,17 @@
 </script>
 
 <template>
-  <main>
-    <img id="logo" src="/images/logo.webp" alt="Logo">
-    <h3>Out latest project</h3>
-    <router-link to="/broken-sleep">
-      <button>Learn more</button>
-    </router-link>
-  </main>
+  <div class="container">
+    <div id="hero">
+      <img id="logo" src="/images/logo.webp" alt="Logo">
+      <router-link to="/broken-sleep">
+        <button>Learn more</button>
+      </router-link>
+    </div>
+    <main>
+      <h1>SomeText</h1>
+    </main>
+  </div>
 </template>
 
 <style scoped>
@@ -17,34 +21,23 @@
   transition: all 1s;
 }
 
-#logo:hover {
-  transition: all 0.5s;
-  transform: translateY(-10vh) scale(0.95);
-}
-
-h3 {
-  transform: translateY(-20vh);
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-main:has(#logo:hover) > h3 {
-  transition: opacity 0.5s;
-  opacity: 1;
-}
-
-main:has(#logo:hover) {
-  backdrop-filter: brightness(0.3);
-}
-
-main {
+#hero {
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
   height: calc(100vh - 5rem);
-  backdrop-filter: brightness(1);
-  transition: backdrop-filter 0.4s;
+  filter: blur(0);
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1rem);
+  padding: 1rem;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6, main p, main span {
+  color: white;
 }
 
 button {
@@ -62,6 +55,11 @@ button {
 button:hover {
   background-color: transparent;
   color: white;
+}
+
+section {
+  background-color: white;
+  min-height: 1rem;
 }
 
 @media (max-width: 700px) {

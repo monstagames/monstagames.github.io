@@ -15,6 +15,7 @@ const router = createRouter({
     {
       path: '/broken-sleep',
       name: 'Broken Sleep',
+      component: () => import("../views/BrokenSleep.vue"),
       meta: {
         title: "Monsta Games | Broken Sleep"
       }
