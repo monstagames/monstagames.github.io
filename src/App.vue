@@ -37,9 +37,6 @@ setInterval(() => {
       <component :is="Component" :key="$route.path"></component>
     </transition>
   </router-view>
-  <footer>
-
-  </footer>
 </template>
 
 <style scoped>
@@ -72,6 +69,7 @@ header {
   z-index: -1;
 }
 
+/* */
 .slide-enter-active,
 .slide-leave-active {
   transition: all 0.5s ease-in-out;

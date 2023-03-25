@@ -9,9 +9,6 @@
         <button>Learn more</button>
       </router-link>
     </div>
-    <main>
-      <h1>SomeText</h1>
-    </main>
   </div>
 </template>
 
@@ -26,7 +23,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 6rem);
   filter: blur(0);
 }
 

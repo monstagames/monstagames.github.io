@@ -19,11 +19,9 @@ onMounted(() => {
       <img v-for="i in 9" :src="`/images/thumbnails/${i}.webp`" alt="Thumbnail">
     </div>
     <p>
-      An experience that visualizes the concept, and feeling of Insomnia, and nocturnal behavior.<br>
-      This experience aims to raise awareness of sleep paralysis in children.<br><br>
-      A portion of this game's revenue will be donated to charity!
+      If you've ever wondered about the experience someone goes through dealing with sleep paralysis, insomnia, extreme paranoia, and or schizophrenia, this game offers an interesting perspective on what it's like dealing with mental illness and the true reality for a lot of people.<br><br>What choices will you make to survive?
     </p>
-    <a href="https://roblox.com/games/11638910932" target="_blank"><button>Play!</button></a>
+    <a href="https://roblox.com/games/12767012936" target="_blank"><button>Play!</button></a>
   </div>
 </template>
 
