@@ -29,7 +29,7 @@ setInterval(() => {
   <!---->
   <header>
     <router-link to="/">
-      <img id="studio-logo" src="/images/placeholder.webp" alt="Monsta Games logo">
+      <img id="studio-logo" src="/images/team-logo.webp" alt="Monsta Games logo">
     </router-link>
   </header>
   <router-view v-slot="{ Component }">
@@ -56,6 +56,7 @@ header {
 
 #studio-logo {
   width: 4rem;
+  filter: brightness(0) invert(1);
 }
 
 .slideshow-element {
