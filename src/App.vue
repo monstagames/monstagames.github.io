@@ -78,6 +78,5 @@ header {
 .slide-enter-from,
 .slide-leave-to {
   opacity: 0;
-  filter: blur(1rem);
-  transform: translateX(-30vw);
+  filter: blur(2rem);
 }</style>
